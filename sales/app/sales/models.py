@@ -21,4 +21,4 @@ class Order(models.Model):
 
 class Positions(models.Model):
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
-    order = models.ForeignKey(Or
+    order = models.ForeignKey(Order, on_delete=models.CASCADE)
